@@ -1,32 +1,112 @@
-.App {
-  text-align: center;
+#container {
+	width: 100vmin;
+	height: 100vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #082567;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#calculator {
+	position: relative;
+	width: 40vmin;
+	height: 60vmin;
+	align-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	color: #ffffff;
+	background-color: yellow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#display {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 40vmin;
+	height: 10vmin;
+	background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+#clear {
+	margin: -1px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20vmin;
+	height: 10vmin;
+	background-color: brown;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#multiply,
+#divide,
+#subtract,
+#add {
+	margin: -1px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10vmin;
+	height: 10vmin;
+	background-color: brown;
+}
+
+.number {
+	margin: -1px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10vmin;
+	height: 10vmin;
+	background-color: green;
+}
+
+#equals {
+	margin: -1px;
+	border: 1px solid black;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10vmin;
+	height: 20vmin;
+	background-color: gray;
+}
+
+#decimal {
+	margin: -1px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 10vmin;
+	width: 20vmin;
+	height: 10vmin;
+	background-color: plum;
+}
+
+#zero {
+	margin: -1px;
+	border: 1px solid black;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	left: 0;
+	width: 10vmin;
+	height: 10vmin;
+	background-color: green;
+}
+
+#calculator *:hover {
+	border-color: white;
+	z-index: 3;
 }
